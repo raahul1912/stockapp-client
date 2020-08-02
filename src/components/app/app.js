@@ -5,6 +5,7 @@ import PrivateRoute from '../../routes/PrivateRoute';
 import { authenticationService } from '../../services/authentication.service';
 import { Company } from '../company';
 import { Login } from '../login';
+import { Chat } from '../chat';
 import './app.css';
 
 // function App() {
@@ -56,6 +57,7 @@ class App extends React.Component {
             <Route path='/login' component={Login} />
             <Route path='/company-list' component={Company} />
           </Switch>
+          <Chat></Chat>
         </div>
       </Router>
     );
